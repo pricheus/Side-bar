@@ -72,3 +72,33 @@ a:hover{
     border-radius: 3px;
     margin: 0.3ch;
 }
+
+#closeButton{
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    top: 30vh;
+   
+    left: 2ch;
+}
+
+.close1{
+    background-color: rgb(185, 79, 79);
+    width: 40px;
+    height: 5px;
+    border-radius: 3px;
+    margin: 0.3ch;
+    rotate: 45deg;
+
+}
+
+.close2{
+    background-color: rgb(185, 79, 79);
+    width: 40px;
+    height: 5px;
+    border-radius: 3px;
+    margin: 0.3ch;
+    rotate: 45deg;
+
+}
