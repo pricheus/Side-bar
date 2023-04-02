@@ -1,0 +1,74 @@
+*{
+    box-sizing: content-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: hsl(210, 36%, 96%);
+    color: #222;
+    font-size: 1.25rem;
+}
+
+.side{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2ch;
+    padding-left: 2ch;
+    background-color: #fff;
+    width: 250px;
+    height: 100vh;   
+}
+
+.title{
+    display: flex;
+    font-size: 1.75rem;
+}
+
+#Addict{
+    color: hsl(205, 89%, 70%);
+    padding: 0 2ch;
+}
+
+ul{
+    padding-top: 6ch; 
+}
+
+li{
+    list-style: none;
+    padding: 2ch;   
+}
+
+a{
+    text-decoration: none;
+    color: #222;
+    text-transform: capitalize;
+    font-size: 1.50rem;
+}
+
+a:hover{
+    background-color: hsl(205, 89%, 70%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 1.25s;
+    transition-timing-function: ease-in;    
+}
+
+#toggleButton{
+    position: relative;
+    left: 85vw;
+    bottom: 99vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.bars{
+    background-color: hsl(205, 89%, 70%);
+    width: 40px;
+    height: 5px;
+    border-radius: 3px;
+    margin: 0.3ch;
+}
