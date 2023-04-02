@@ -16,8 +16,14 @@ body{
     padding-top: 2ch;
     padding-left: 2ch;
     background-color: #fff;
-    width: 250px;
-    height: 100vh;   
+    
+    height: 0;
+    overflow: hidden;
+}
+
+.navbar{
+     
+    height: 100vh;
 }
 
 .title{
@@ -57,12 +63,12 @@ a:hover{
 }
 
 #toggleButton{
-    position: relative;
+    position: absolute;
     left: 85vw;
-    bottom: 99vh;
+    bottom: 90vh;
     display: flex;
     flex-direction: column;
-
+    cursor: pointer;
 }
 
 .bars{
@@ -81,6 +87,8 @@ a:hover{
     top: 30vh;
    
     left: 2ch;
+
+    cursor: pointer;
 }
 
 .close1{
