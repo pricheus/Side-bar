@@ -5,108 +5,112 @@
 }
 
 body{
+    font-size: 1.25rem;
+    font-family: 'Open Sans', sans-serif;
     background-color: hsl(210, 36%, 96%);
     color: #222;
-    font-size: 1.25rem;
 }
 
-.side{
+#toggleButton{
     display: flex;
     flex-direction: column;
+     position: fixed;
+     left:90vw ;
+     height: auto;
+     width: auto;
+     top: 2ch;
+     animation: infinite;
+     cursor: pointer;
+ 
+}
+
+.bars{
+    width: 35px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #49a6e9;
+    margin: 0.3ch;
+    cursor: pointer;
+}
+
+aside{
+    position: relative;
     padding-top: 2ch;
-    padding-left: 2ch;
     background-color: #fff;
-    
-    height: 0;
-    overflow: hidden;
-}
-
-.navbar{
-     
+    width: 0;
     height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transition-timing-function: ease-in;
+    transition-duration: 0.37s;
 }
 
-.title{
+.display_aside{
+    width: 25rem;
+    transition-timing-function: ease-in;
+    transition-duration: 0.37s;
+}
+
+#title{
     display: flex;
-    font-size: 1.75rem;
+    justify-content: space-around;
+    
 }
 
 #Addict{
-    color: hsl(205, 89%, 70%);
-    padding: 0 2ch;
+    color: #49a6e9;
+    position: relative;
+    right:2.25ch ;
+}
+
+.material-symbols-outlined{
+    color: rgb(177, 41, 41);
+    cursor: pointer;
 }
 
 ul{
-    padding-top: 6ch; 
+    width: 100%;
+    padding-top: 3ch;
+   
+    font-size: 1.3rem;
 }
 
 li{
     list-style: none;
-    padding: 2ch;   
+    margin: 1ch 0;
+    width: 100%;
 }
 
 a{
     text-decoration: none;
     color: #222;
-    text-transform: capitalize;
-    font-size: 1.50rem;
+    
 }
 
-a:hover{
-    background-color: hsl(205, 89%, 70%);
-    width: 100%;
+li:hover{
+    background-color: #61a4d4;
+    height: 4ch;
     display: flex;
-    justify-content: center;
     align-items: center;
-    transition-duration: 1.25s;
-    transition-timing-function: ease-in;    
+    transition-duration: 0.7s;
+    transition-timing-function: ease-in;
+    width: 100%;
 }
 
-#toggleButton{
-    position: absolute;
-    left: 85vw;
-    bottom: 90vh;
+
+a:active{
+    color: rgb(177, 41, 41);
+}
+
+#socials{
     display: flex;
-    flex-direction: column;
-    cursor: pointer;
+    padding-bottom: 4ch;
 }
 
-.bars{
-    background-color: hsl(205, 89%, 70%);
-    width: 40px;
-    height: 5px;
-    border-radius: 3px;
-    margin: 0.3ch;
-}
-
-#closeButton{
-    display: flex;
-    flex-direction: column;
-
-    position: relative;
-    top: 30vh;
-   
-    left: 2ch;
-
-    cursor: pointer;
-}
-
-.close1{
-    background-color: rgb(185, 79, 79);
-    width: 40px;
-    height: 5px;
-    border-radius: 3px;
-    margin: 0.3ch;
-    rotate: 45deg;
-
-}
-
-.close2{
-    background-color: rgb(185, 79, 79);
-    width: 40px;
-    height: 5px;
-    border-radius: 3px;
-    margin: 0.3ch;
-    rotate: 45deg;
-
+#socials:hover{
+    background-color: none;
 }

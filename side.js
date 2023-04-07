@@ -1,14 +1,12 @@
 //interactive elements
 const toggleButton = document.getElementById('toggleButton');
-const closeButton = document.getElementById('closeButton');
-const links = document.getElementById('links');
+const closeButton = document.getElementsByClassName('material-symbols-outlined')[0];
+const togggleSideBar =  document.getElementsByClassName('aside')[0];
 
 toggleButton.onclick = function(){
-    links.classList.toggle('navbar');
-    links.style.transition = '2s';
+    togggleSideBar.classList.toggle('display_aside')
 };
 
 closeButton.onclick = function(){
-    links.classList.remove('navbar');
-    links.style.transition = '2s';
-};
+    togggleSideBar.classList.remove('display_aside')
+}
