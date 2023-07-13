@@ -1,12 +1,12 @@
-//interactive elements
-const toggleButton = document.getElementById('toggleButton');
-const closeButton = document.getElementsByClassName('material-symbols-outlined')[0];
-const togggleSideBar =  document.getElementsByClassName('aside')[0];
+const toggleBtn = document.querySelector("#toggleButton");
+const closeBtn = document.querySelector("#closeBtn");
+const sideBar = document.querySelector("aside");
+console.log(toggleBtn, closeBtn, sideBar);
 
-toggleButton.onclick = function(){
-    togggleSideBar.classList.toggle('display_aside')
+toggleBtn.onclick = function () {
+  sideBar.classList.toggle("display_aside");
 };
 
-closeButton.onclick = function(){
-    togggleSideBar.classList.remove('display_aside')
-}
+closeBtn.onclick = function () {
+  sideBar.classList.remove("display_aside");
+};
